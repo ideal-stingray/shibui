@@ -1,1 +1,108 @@
 /* You can add custom style here */
+.authornote {
+    &:hover {
+      .authornote-label { font-weight: bold; }
+    }
+	.authornote-label {
+    border-bottom: 1px dotted;
+	}
+}
+
+.authornote-checkbox {
+	display: none;
+}
+
+.authornote-content {
+  box-sizing: border-box;
+  margin: var(--spacing-base) 0;
+  padding: var(--spacing-sm) var(--spacing-base);
+  border: 1px solid var(--color-border);
+  border-radius: var(--pre-border-radius);
+  background: var(--color-bg-secondary);
+  box-shadow: 0 1px 2px 0 var(--color-border);
+  display: none;
+
+  .authornote-checkbox:checked ~ & {
+    display: block;
+  }
+}
+
+details {
+  display: block;
+  box-sizing: border-box;
+  margin: var(--spacing-base) 0;
+  padding: var(--spacing-sm) var(--spacing-base);
+  border: 1px solid var(--color-border);
+  border-radius: var(--pre-border-radius);
+  background: var(--color-bg-secondary);
+  box-shadow: 0 1px 2px 0 var(--color-border);
+}
+
+hr {
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.dailyprophet {
+  width: 90%;
+  margin: auto;
+  background: #FDF6E3;
+}
+
+.dpnopad {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+}
+
+.dphr {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 90%;
+}
+
+.dptitle {
+  font-size: xx-large;
+  font-family: serif;
+  font-variant: small-caps;
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  padding-top: 1em;
+}
+
+.dpsubtitle {
+  font-size: small;
+  font-variant: serif;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.dpheadline {
+  font-size: xxx-large;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.dpimage {
+  width: 60%;
+  margin: auto;
+}
+
+.dptwocol {
+  display: flex;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.dpcol {
+  flex: 50%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.dpsmallheadline {
+  font-size: large;
+}
