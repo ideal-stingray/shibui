@@ -106,3 +106,31 @@ hr {
 .dpsmallheadline {
   font-size: large;
 }
+
+/* Chapter Navigation */
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
+
+.prev-chapter, .next-chapter {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--pre-border-radius);
+  text-decoration: none;
+  background: var(--color-bg-secondary);
+  box-shadow: 0 1px 2px 0 var(--color-border);
+  max-width: 40%;
+}
+
+.prev-chapter:hover, .next-chapter:hover {
+  background: var(--color-accent);
+  border: 1px solid var(--color-border);
+}
+
+/* When only next chapter exists (first chapter), align to the right */
+.chapter-nav .next-chapter:only-child {
+  margin-left: auto;
+}
