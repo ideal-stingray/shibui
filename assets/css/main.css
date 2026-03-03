@@ -277,6 +277,14 @@ h5 > code {
   padding: 0 3px;
 }
 
+.series-list {
+  padding-bottom: var(--spacing-base);
+}
+
+.series-list ul {
+  list-style-type: none;
+}
+
 /* Path navigation styles */
 .path-nav {
   font-family: var(--font-family-mono);
