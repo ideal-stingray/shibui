@@ -142,7 +142,6 @@ body {
   grid-template-columns: minmax(auto, var(--container-width));
   justify-content: center;
   padding: var(--spacing-lg);
-  gap: var(--spacing-lg);
 }
 
 a {
