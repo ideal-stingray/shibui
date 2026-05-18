@@ -137,11 +137,11 @@ body {
   font: var(--font-size-base) / var(--spacing-base) var(--font-family-mono);
   background: var(--color-bg-primary);
   min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: minmax(auto, var(--container-width));
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: var(--spacing-lg);
+  padding-top: var(--spacing-sm);
 }
 
 a {
@@ -318,6 +318,7 @@ h5 > code {
 
 .path-nav li.current {
   max-width: none; /* Allow full width for current page */
+  overflow: scroll;
 }
 
 .path-nav li a {
@@ -528,16 +529,6 @@ blockquote > :last-child {
 
   .path-nav li.current {
     max-width: 150px; /* Allow slightly more width for current page on mobile */
-  }
-}
-
-@media (max-width: 600px) {
-  body {
-    padding-top: 2em;
-  }
-
-  pre {
-    max-width: calc(100vw - 4em);
   }
 }
 
