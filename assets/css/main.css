@@ -13,9 +13,9 @@
   --spacing-lg: calc(var(--spacing-base) * 2);
 
   /* Base theme knobs */
-  --bg-h: 0;
-  --bg-s: 0%;
-  --bg-l: 99%;
+  --bg-h: 244;
+  --bg-s: 32%;
+  --bg-l: 93%;
 
   /* Background colors */
   --color-bg-primary: hsl(var(--bg-h) var(--bg-s) var(--bg-l));
@@ -26,7 +26,7 @@
   /* Text colors with WCAG-friendly contrast */
   /* Primary: ensures near-black on light bg and near-white on dark bg */
   --color-text-primary: hsl(
-    var(--bg-h) var(--bg-s) clamp(8%, calc(100% - var(--bg-l)), 92%)
+    var(--bg-h) var(--bg-s) clamp(15%, calc(100% - var(--bg-l)), 92%)
   );
 
   /* Muted: softer but still >4.5:1 contrast */
